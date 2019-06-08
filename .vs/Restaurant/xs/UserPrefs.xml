@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{3BC69B19-0F5C-40F2-9ED7-8D1121D39A1F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Admin/Views/SubCategory/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Restaurant Status">
     <Files>
       <File FileName="Models/SubCategory.cs" Line="22" Column="53" />
       <File FileName="Services/SubCategoryService.cs" Line="35" Column="49" />
       <File FileName="Areas/Admin/Controllers/SubCategoryController.cs" Line="33" Column="30" />
-      <File FileName="Areas/Admin/Views/SubCategory/Index.cshtml" Line="54" Column="53" />
+      <File FileName="Areas/Admin/Views/SubCategory/Index.cshtml" Line="13" Column="24" />
       <File FileName="Areas/Admin/Controllers/CategoryController.cs" Line="22" Column="9" />
       <File FileName="Views/Shared/_Layout.cshtml" Line="44" Column="112" />
       <File FileName="wwwroot/css/site.css" Line="63" Column="17" />
-      <File FileName="Areas/Admin/Views/Category/Index.cshtml" Line="29" Column="44" />
+      <File FileName="Areas/Admin/Views/Category/Index.cshtml" Line="17" Column="50" />
+      <File FileName="Restaurant Status" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,10 +20,10 @@
                 <Node name="Admin" expanded="True">
                   <Node name="Controllers" expanded="True" />
                   <Node name="Views" expanded="True">
-                    <Node name="Category" expanded="True" />
-                    <Node name="SubCategory" expanded="True">
+                    <Node name="Category" expanded="True">
                       <Node name="Index.cshtml" selected="True" />
                     </Node>
+                    <Node name="SubCategory" expanded="True" />
                   </Node>
                 </Node>
               </Node>
