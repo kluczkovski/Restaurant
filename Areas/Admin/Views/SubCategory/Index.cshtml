@@ -1,0 +1,67 @@
+﻿@model IEnumerable<SubCategory>
+
+
+@{
+    ViewData["Title"] = "List of SubCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+
+
+<div class="backgroundWhite">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 class="text-secondary">SubCategory List</h2>
+        </div>
+        <div class="col-sm-6 text-right">
+            <partial name="_CreateButtonPartial"></partial>
+        </div>
+    </div>
+
+    <br />
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(m => m.Name)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(m => m.Category.Name)
+                    </th>
+
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor( mItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(mItem => item.Category.Name)
+                        </td>
+                        <td>
+                            <partial name="_TableButtonPartial"  model="item.Id"/>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>There is no SubCategory</p>
+    }
+
+
+</div>

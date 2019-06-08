@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>aspnet-Restaurant-E6C8D13B-26BE-4612-93FC-D17A4DB64A01</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Customer\" />
+    <Folder Include="Areas\Customer\Controllers\" />
+    <Folder Include="Areas\Customer\Views\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Customer\Views\Home\" />
+    <Folder Include="Services\" />
+    <Folder Include="Areas\Admin\Views\Category\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="Services\Exceptions\" />
+    <Folder Include="Models\ViewModels\" />
+    <Folder Include="Areas\Admin\Views\SubCategory\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Areas\Customer\Views\Home\Privacy.cshtml" />
+    <Content Remove="Areas\Customer\Views\_ViewStart.cshtml" />
+    <Content Remove="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Remove="wwwroot\images\4.jpg" />
+    <Content Remove="wwwroot\images\5.jpg" />
+    <Content Remove="wwwroot\images\15OFF.png" />
+    <Content Remove="wwwroot\images\20OFF.png" />
+    <Content Remove="wwwroot\images\dust_scratches.png" />
+    <Content Remove="wwwroot\images\mild.png" />
+    <Content Remove="wwwroot\images\spicy.png" />
+    <Content Remove="wwwroot\images\verySpicy.png" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-2.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\15OFF.png" />
+    <None Include="wwwroot\images\20OFF.png" />
+    <None Include="wwwroot\images\dust_scratches.png" />
+    <None Include="wwwroot\images\mild.png" />
+    <None Include="wwwroot\images\spicy.png" />
+    <None Include="wwwroot\images\verySpicy.png" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-2.css" />
+  </ItemGroup>
+</Project>
