@@ -28,6 +28,9 @@
     <Folder Include="Services\Exceptions\" />
     <Folder Include="Models\ViewModels\" />
     <Folder Include="Areas\Admin\Views\SubCategory\" />
+    <Folder Include="Models\Enums\" />
+    <Folder Include="Areas\Admin\Views\MenuItem\" />
+    <Folder Include="Utility\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Areas\Customer\Views\Home\Privacy.cshtml" />
@@ -42,6 +45,7 @@
     <Content Remove="wwwroot\images\spicy.png" />
     <Content Remove="wwwroot\images\verySpicy.png" />
     <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-2.css" />
+    <Content Remove="wwwroot\images\default_food.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\images\15OFF.png" />
@@ -51,5 +55,6 @@
     <None Include="wwwroot\images\spicy.png" />
     <None Include="wwwroot\images\verySpicy.png" />
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-2.css" />
+    <None Include="wwwroot\images\default_food.png" />
   </ItemGroup>
 </Project>

@@ -42,11 +42,17 @@ namespace Restaurant.Services
             return await _db.Category.OrderBy(x => x.Name).ToListAsync();
         }
 
+        // Find All
+        public List<Category> FindAll()
+        {
+            return  _db.Category.OrderBy(x => x.Name).ToList();
+        }
+
 
         // Insert a new record
         public async Task InsertAsync(Category category)
         {
-            _db.Add(category);
+            await _db.AddAsync(category);
             await _db.SaveChangesAsync();
         }
 

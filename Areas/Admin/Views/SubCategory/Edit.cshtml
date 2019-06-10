@@ -1,0 +1,98 @@
+﻿@model Restaurant.Models.ViewModels.SubCategoryAndCategoryViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+
+
+<partial name="_StatusMessage" model="Model.StatusMessage" />
+
+<div class="backgroundWhiteBorder">
+
+    <div class="row">
+        <div class="col-8 border-right">
+            <form method="post" asp-action="Create">
+
+                <h2 class="text-secondary">Edit SubCategory</h2>
+                <br />
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input asp-for="SubCategory.Id" type="hidden" />
+
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="SubCategory.CategoryId" class="form-lable"></label>
+                    </div>
+                    <div class="col-5">
+                        <select id="idCatList" asp-for="SubCategory.CategoryId" class="form-control" asp-items="@(new SelectList(Model.CategoryList, "Id", "Name"))"></select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="SubCategory.Name" class="col-form-lable"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="SubCategory.Name" class="form-control" />
+                    </div>
+                    <span asp-validation-for="SubCategory.Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-5 offset-2">
+                        <partial name="_EditAndBackToListButton"  model="Model.SubCategory.Id"/>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="col-3 offset-1">
+            @if (Model.SubCategoryList.Count() > 0)
+            {
+                <p class="text-secondary">List of SubCategory</p>
+                <div id="SubCategoryList">
+                    <ul class="list-group"></ul>
+                </div>
+            }
+        </div>
+
+    </div>
+</div>
+
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>function updateSubCategoryList() {
+        var categorySelected = document.getElementById("idCatList").value;
+        $list = $('#SubCategoryList');
+        $.ajax({
+            url: '/Admin/SubCategory/GetSubCategory/' + categorySelected,
+            type: 'GET',
+            dataType: 'text',
+            success: function (data) {
+                results = JSON.parse(data);
+                $list.html('');
+                $list.append(' <ul style="list-style-type:none;"> ');
+                for (i in results) {
+                    $list.append('<li class="text-white bg-secondary">' + results[i].text + '</li>');
+                }
+                $list.append('</ul>');
+            }
+        });
+    }
+    $(document).ready(function () {
+        updateSubCategoryList();
+    });
+    $("#idCatList").on("change", function () {
+        updateSubCategoryList();
+    });</script>
+
+
+}

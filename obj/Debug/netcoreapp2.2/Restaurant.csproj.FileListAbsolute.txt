@@ -76,3 +76,13 @@
 /Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_DeleteAndBackToListButton.g.cshtml.cs
 /Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_DetailsAndBackToListButton.g.cshtml.cs
 /Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/SubCategory/Index.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/SubCategory/Create.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_StatusMessage.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/SubCategory/Edit.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/SubCategory/Details.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/SubCategory/Delete.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/MenuItem/Index.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/MenuItem/Create.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/MenuItem/Edit.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/MenuItem/Details.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/MenuItem/Delete.g.cshtml.cs

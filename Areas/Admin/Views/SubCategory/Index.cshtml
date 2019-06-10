@@ -10,11 +10,11 @@
 <br />
 
 
-<div class="backgroundWhite">
+<div class="backgroundWhiteBorder">
 
     <div class="row">
         <div class="col-sm-6">
-            <h2 class="text-secondary">SubCategory List</h2>
+            <h3 class="text-secondary">SubCategory List</h3>
         </div>
         <div class="col-sm-6 text-right">
             <partial name="_CreateButtonPartial"></partial>
@@ -27,7 +27,7 @@
     {
         <table class="table table-hover">
             <thead>
-                <tr>
+                <tr class="tableHeader">
                     <th>
                         @Html.DisplayNameFor(m => m.Name)
                     </th>
@@ -37,21 +37,22 @@
                     </th>
 
                     <th></th>
+                    <th></th>
                 </tr>
             </thead>
 
             <tbody>
-                @foreach(var item in Model)
+                @foreach (var item in Model)
                 {
                     <tr>
                         <td>
-                            @Html.DisplayFor( mItem => item.Name)
+                            @Html.DisplayFor(mItem => item.Name)
                         </td>
                         <td>
                             @Html.DisplayFor(mItem => item.Category.Name)
                         </td>
                         <td>
-                            <partial name="_TableButtonPartial"  model="item.Id"/>
+                            <partial name="_TableButtonPartial" model="item.Id" />
                         </td>
                     </tr>
                 }
