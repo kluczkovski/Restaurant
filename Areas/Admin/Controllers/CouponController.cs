@@ -7,11 +7,14 @@ using Microsoft.AspNetCore.Mvc;
 using Restaurant.Services;
 using Restaurant.Models;
 using System.IO;
+using Microsoft.AspNetCore.Authorization;
+using Restaurant.Utility;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Restaurant.Areas.Admin.Controllers
 {
+    [Authorize(Roles = StaticDetails.ManagerUser)]
     [Area("Admin")]
     public class CouponController : Controller
     {

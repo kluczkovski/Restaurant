@@ -91,3 +91,4 @@
 /Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/Coupon/Edit.g.cshtml.cs
 /Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/Coupon/Index.g.cshtml.cs
 /Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ThumbnailAreaPartial.g.cshtml.cs
+/Users/ekluczkovski/Projects/Restaurant/obj/Debug/netcoreapp2.2/Razor/Areas/Admin/Views/User/Index.g.cshtml.cs

@@ -11,10 +11,12 @@ using Restaurant.Services;
 using Restaurant.Models.ViewModels;
 using Restaurant.Models;
 using Restaurant.Utility;
+using Microsoft.AspNetCore.Authorization;
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Restaurant.Areas.Admin.Controllers
 {
+    [Authorize(Roles = StaticDetails.ManagerUser)]
     [Area("Admin")]
     public class MenuItemController : Controller
     {

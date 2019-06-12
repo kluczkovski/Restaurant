@@ -4,16 +4,19 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 using Restaurant.Models;
 using Restaurant.Services;
+using Restaurant.Utility;
 using Restaurant.Services.Exceptions;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Restaurant.Areas.Admin.Controllers
 {
+    [Authorize(Roles = StaticDetails.ManagerUser)]
     [Area("Admin")]
     public class CategoryController : Controller
     {

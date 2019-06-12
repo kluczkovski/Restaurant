@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{3BC69B19-0F5C-40F2-9ED7-8D1121D39A1F}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Restaurant Status">
     <Files>
-      <File FileName="Areas/Customer/Controllers/HomeController.cs" Line="41" Column="73" />
-      <File FileName="Areas/Admin/Controllers/MenuItemController.cs" Line="170" Column="1" />
-      <File FileName="Views/Shared/_ThumbnailAreaPartial.cshtml" Line="6" Column="109" />
-      <File FileName="Areas/Customer/Views/Home/Index.cshtml" Line="82" Column="54" />
-      <File FileName="wwwroot/css/site.css" Line="98" Column="24" />
+      <File FileName="Models/ShoppingCart.cs" Line="16" Column="1" />
+      <File FileName="Data/ApplicationDbContext.cs" Line="21" Column="54" />
       <File FileName="Restaurant Status" />
     </Files>
     <Pads>
@@ -14,15 +11,25 @@
           <Node name="Restaurant" expanded="True">
             <Node name="Restaurant" expanded="True">
               <Node name="Areas" expanded="True" />
-              <Node name="wwwroot" expanded="True">
-                <Node name="images" expanded="True" selected="True" />
+              <Node name="Data" expanded="True">
+                <Node name="ApplicationDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Utility" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>role</Value>
+          <Value>Input.Name</Value>
+          <Value>rdUserRole</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

@@ -40,7 +40,8 @@ namespace Restaurant
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
                 builder =>  builder.MigrationsAssembly("Restaurant")));
 
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddDefaultTokenProviders()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
@@ -51,6 +52,7 @@ namespace Restaurant
             services.AddScoped<SubCategoryService>();
             services.AddScoped<MenuItemService>();
             services.AddScoped<CouponService>();
+            services.AddScoped<UserService>();
 
 
         }

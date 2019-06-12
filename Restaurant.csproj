@@ -32,6 +32,7 @@
     <Folder Include="Areas\Admin\Views\MenuItem\" />
     <Folder Include="Utility\" />
     <Folder Include="Areas\Admin\Views\Coupon\" />
+    <Folder Include="Areas\Admin\Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Areas\Customer\Views\Home\Privacy.cshtml" />

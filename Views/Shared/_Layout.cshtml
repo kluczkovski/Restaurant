@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Restaurant.Utility
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -24,7 +26,9 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="Customer" asp-controller="Home" asp-action="Index">Restaurant</a>
+                <a class="navbar-brand" asp-area="Customer" asp-controller="Home" asp-action="Index">
+                Restaurant
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,27 +38,29 @@
                     <partial name="_LoginPartial" />
 
                     <ul class="navbar-nav flex-grow-1">
+                        @if (User.IsInRole(StaticDetails.ManagerUser))
+                        {
+                            <li class="nav-item dropdown text-white-50">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    Content Management
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="Category" asp-action="Index"> Category</a>
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="SubCategory" asp-action="Index"> SubCategory</a>
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="MenuItem" asp-action="Index"> MenuItem</a>
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="Coupon" asp-action="Index"> Coupons</a>
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="User" asp-action="Index"> Users</a>
+                                </div>
+                            </li>
+                        }
 
-                        <li class="nav-item dropdown text-white-50">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">
-                                Content Management
+                        <li style="color:white;">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-shopping-bag"></i>&nbsp;(0)
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" asp-action="Index" asp-controller="Category"  asp-area="Admin"> Category</a>
-                                <a class="dropdown-item" asp-action="Index" asp-controller="SubCategory" asp-area="Admin"> SubCategory</a>
-                                <a class="dropdown-item" asp-action="Index" asp-controller="MenuItem" asp-area="Admin"> MenuItem</a>
-                                <a class="dropdown-item" asp-action="Index" asp-controller="Coupon" asp-area="Admin"> Coupons</a>
-                                <a class="dropdown-item"> Users</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
 
                     </ul>
                 </div>
