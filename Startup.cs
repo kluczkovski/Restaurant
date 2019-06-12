@@ -50,6 +50,8 @@ namespace Restaurant
             services.AddScoped<CategoryService>(); //injection dependency, now, this service can be injected in others classes
             services.AddScoped<SubCategoryService>();
             services.AddScoped<MenuItemService>();
+            services.AddScoped<CouponService>();
+
 
         }
 

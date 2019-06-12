@@ -248,9 +248,5 @@ namespace Restaurant.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-
-
-
-
     }
 }

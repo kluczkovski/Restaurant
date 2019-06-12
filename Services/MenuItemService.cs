@@ -40,6 +40,17 @@ namespace Restaurant.Services
         }
 
 
+        //Find all MenuItems
+        public async Task<IEnumerable<MenuItem>> FindAllWithIncludesAsync()
+        {
+            return await _db.MenuItem
+                        .Include(obj => obj.Category)
+                        .Include(obj => obj.SubCategory)
+                        .OrderBy(obj => obj.Name).ToListAsync();
+        }
+
+
+
         //Create a new record
         public async Task InsertAsync(MenuItem menuItem)
         {

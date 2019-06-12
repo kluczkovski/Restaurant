@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{3BC69B19-0F5C-40F2-9ED7-8D1121D39A1F}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Restaurant Status">
     <Files>
-      <File FileName="Services/MenuItemService.cs" Line="33" Column="1" />
-      <File FileName="Areas/Admin/Controllers/MenuItemController.cs" Line="242" Column="1" />
-      <File FileName="Areas/Admin/Controllers/SubCategoryController.cs" Line="188" Column="10" />
-      <File FileName="Services/SubCategoryService.cs" Line="98" Column="1" />
-      <File FileName="Areas/Admin/Views/MenuItem/Details.cshtml" Line="84" Column="40" />
-      <File FileName="Models/MenuItem.cs" Line="37" Column="1" />
+      <File FileName="Areas/Customer/Controllers/HomeController.cs" Line="41" Column="73" />
+      <File FileName="Areas/Admin/Controllers/MenuItemController.cs" Line="170" Column="1" />
+      <File FileName="Views/Shared/_ThumbnailAreaPartial.cshtml" Line="6" Column="109" />
+      <File FileName="Areas/Customer/Views/Home/Index.cshtml" Line="82" Column="54" />
+      <File FileName="wwwroot/css/site.css" Line="98" Column="24" />
       <File FileName="Restaurant Status" />
     </Files>
     <Pads>
@@ -14,15 +13,10 @@
         <State name="__root__">
           <Node name="Restaurant" expanded="True">
             <Node name="Restaurant" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="MenuItemController.cs" selected="True" />
-                  </Node>
-                </Node>
+              <Node name="Areas" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="images" expanded="True" selected="True" />
               </Node>
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -36,10 +30,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ekluczkovski/Projects/Restaurant/Areas/Admin/Controllers/MenuItemController.cs" relfile="Areas/Admin/Controllers/MenuItemController.cs" line="143" column="1" />
-      <Breakpoint file="/Users/ekluczkovski/Projects/Restaurant/Areas/Admin/Controllers/MenuItemController.cs" relfile="Areas/Admin/Controllers/MenuItemController.cs" line="170" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
