@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{3BC69B19-0F5C-40F2-9ED7-8D1121D39A1F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Restaurant Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="Models/ShoppingCart.cs" Line="16" Column="1" />
-      <File FileName="Data/ApplicationDbContext.cs" Line="21" Column="54" />
-      <File FileName="Restaurant Status" />
+      <File FileName="Startup.cs" Line="32" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,24 +9,9 @@
           <Node name="Restaurant" expanded="True">
             <Node name="Restaurant" expanded="True">
               <Node name="Areas" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="ApplicationDbContext.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="Utility" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True" />
-              </Node>
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>role</Value>
-          <Value>Input.Name</Value>
-          <Value>rdUserRole</Value>
         </State>
       </Pad>
     </Pads>
@@ -37,7 +20,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ekluczkovski/Projects/Restaurant/Areas/Customer/Controllers/CartController.cs" relfile="Areas/Customer/Controllers/CartController.cs" line="199" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
